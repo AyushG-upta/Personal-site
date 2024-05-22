@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripZIP</title>
+    <link rel="stylesheet" href="w3.css">
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+    <style>
+        body{
+            background-image: url('tour.png');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .head{
+           border-top: 1px solid white;
+           backdrop-filter: blur(50px);    
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            padding: 1px 1px;
+        }
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(1, 47, 73);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+nav h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+nav ul li button{
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:5px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+}
+.box{
+    background: transparent;
+    border-radius: 1px;
+    padding:0px;
+    margin: 0px;
+}
+.tablinks{
+    cursor: pointer;
+    padding: 10px;
+    margin: 0px;
+    background: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-right: 50px;
+    border-radius: 2px;  
+}
+.tablinks:hover{
+    background-color: rgb(240, 94, 64);
+}
+.tablinks:active{
+    background-color: cyan;
+}
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding:0px;
+    margin: 0px;
+    backdrop-filter: blur(10px);
+}
+h3{
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+.tours{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+}
+.places{
+	display: inline;
+	text-align: center;
+	border-radius: 12px;
+}
+.places h2{
+	color: rgb(55, 55, 55);
+	font-size: 35px;
+	letter-spacing: 3px;
+	border-radius: 1px;
+	padding: 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.places h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+.places a{
+	text-decoration: none;
+	color: rgb(24, 124, 170);
+	font-weight: bold;
+	font-size: 18px;
+    border:2px rgb(0, 0, 0);
+	border-radius: 12px;
+	padding: 5px 3px;
+	background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+.places a:hover{
+	background-color: #000;
+	letter-spacing: 3px;
+	transition: 0.6s;
+}
+.places img{
+    border: #0a0a23 2px;
+}
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+input{
+             padding: 0 8px;
+              vertical-align: middle;
+              border-radius: 2px;
+             width: 100%;
+             min-height: 36px;
+              background-color: #ffffff;
+           border: 1px solid rgba(36,28,21,0.3);
+          transition: all 0.2s ease-in-out 0s;
+             font-size: 16px;
+             line-height: 18px;
+             font-weight: normal;
+                
+  }   
+             #footer {
+            position:fixed;
+            padding: 20px 20px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/
+            height: 20px;
+            background: transparent;
+            text-align:right;
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <img src="pngegg.png" alt="">
+            <h1><u><b>TripZip.com</b></u></h1>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Contact</a></li>
+               <li><button >Login|Register</button></li>
+            </ul>
+        </nav>
+        <div class="textbox">
+            <h1></h1>
+            <p></p>
+            <a href=""></a>
+        </div>
+    </div>
+        <div class="box">
+        <button class="tablinks" onclick="openCity(event, 'Flights')"><ion-icon name="airplane"></ion-icon><b>Flights</b></button>
+        <button class="tablinks" onclick="openCity(event, 'Hotels')"><ion-icon name="bed-outline"></ion-icon><b>Hotels</b></button>
+        <button class="tablinks" onclick="openCity(event, 'Rentals')"><ion-icon name="car-sport"></ion-icon><b>Rentals</b></button>
+        </div><br>
+        <section>
+        <div id="Flights" class="tabcontent">
+  <h3>Travel To Different Places With Us</h3>
+  <div class="from">
+  <label>From :</label><input type="text" placeholder="Departing from"></div>
+  <label>To :</label><input class="to" type="text" placeholder="Arriving at">
+    <p class="s"><button style="background: transparent;" >Search and find dates</button></p>
+</div>
+<div id="Hotels" class="tabcontent">
+    <h3>Find the best hotels</h3>
+    <p>Book a hotel with us and get the best fares and promotions.</p>
+    <p>We know hotels - we know comfort.</p>
+    <p><button class="b1" style="background: transparent;">Search Hotels</button></p>
+</div>
+<div id="Rentals" class="tabcontent">
+    <h3>Best car rental in the world!</h3>
+    <p><span class="">DISCOUNT!</span> Special offer if you book today: 25% off anywhere in the world with CarServiceRentalRUs</p>
+    <input class="" type="text" placeholder="Pick-up point">
+    <p><button style="background: transparent;">Search Availability</button></p>
+</div>
+    </section>
+    <div class="tours">
+        <div class="places">
+            <h1><u> Popular Package</u></h1> 
+            <br><h2>Eygpt</h2>
+            <img src="giza.jpg" style="width: 300px; height: 350px; border-radius: 12px; margin-right: 15px;">
+            <br>
+            <br>
+            <a href="#">Book Now 15% OFF</a>
+        </div>
+        <div class="places"><br><br><br><br><br>
+            <h2>pisa</h2>
+            <img src="pisa.jpg" style="width: 300px; height: 350px;  margin-right: 15px;  border-radius: 15px; ">
+            <br>
+            <br>
+            <a href="#">Book Now 20% OFF</a>
+        </div>
+        <div class="places"><br><br><br><br><br>
+            <h2>Paris</h2>
+            <img src="paris.jpg" style="width: 300px; height: 350px; border-radius: 12px; margin-right: 15px; ">
+            <br>
+            <br>
+            <a href="#">Book Now 25% OFF</a>
+        </div>
+        <br>
+        <div id="footer"><b>This Page is designed by © AayushGupta|41<b>
+        </div>  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

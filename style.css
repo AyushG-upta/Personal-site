@@ -1,0 +1,215 @@
+body{
+  background-image: url("./assets/background.jpg");
+  background-attachment: fixed;
+}
+
+.macondo-regular {
+  font-family: "Macondo", cursive;
+  font-weight: 600;
+  font-style:oblique;
+  text-align: center;
+  color: whitesmoke;
+  
+}
+
+
+span{
+  
+  margin-bottom: 20%;
+  
+}
+
+.profile{
+  height: 120px;
+  border-radius: 50%;
+  margin-top: 10%;
+  border: 2px solid;
+  border-color: whitesmoke;
+}
+
+.imgpfp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ab{
+  text-align: center;
+  font-family: "Macondo",cursive;
+  font-size: large;
+  font-weight: bold;
+}
+
+.first{
+  height: 60vh;
+
+  margin-bottom: 250px;
+  padding: 0;
+}
+
+.second{
+  margin: 0;
+  
+}
+
+.projects{
+  display: inline-grid;
+  height: 70vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap:50px;
+  column-gap: 100px;
+  width: 100%;
+  justify-content: center;
+
+}
+
+
+.mp{
+  grid-area: 1/1/2/4;
+  margin-top: 100px;
+  
+}
+
+.p1{
+  grid-area: 2/1/2/2;
+}
+
+.p2{
+  grid-area: 2/2/2/4;
+}
+
+.pj1{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.pj2{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.education{
+  display: inline-block;
+}
+
+.imgedu{
+  height: 200px;
+  position: relative;
+  top: -70px;
+  float: right;
+}
+
+.skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 80px;
+  height: 50vh;
+}
+
+
+.heading{
+  margin-top: 150px;
+  text-align: center;
+  color: whitesmoke;
+}
+.skimg1{
+  height: 50px;
+  flex-basis: 100px;
+}
+
+.skimg2{
+  height: 50px;
+  flex-basis: 100px;
+  
+}
+
+.skimg3{
+  height: 50px;
+  flex-basis: 100px;
+  
+}
+
+h2{
+  font-family: "Macondo",cursive;
+  color: whitesmoke;
+}
+
+li{
+  font-family: cursive;
+  color: whitesmoke;
+}
+p{
+  font-family: cursive;
+  color: whitesmoke;
+}
+
+.pjimp{
+  height: 200px;
+  border: 5px solid whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.exp{
+  height: 50vh;
+  margin-top: 100px;
+}
+
+
+.interestslist{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.vidgame ,.webdev{
+  height: 150px;
+  border-radius: 10%;
+  
+}
+
+
+.fourth{
+ text-align: center;
+ margin-top: 10%;
+ margin-bottom: 20px;
+
+}
+
+footer{
+  height: 50px;
+  width: 100%;
+  
+}
+.emph{
+  margin-top: 100px;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  justify-content:center;
+  align-items:flex-end;
+  gap: 50%;
+  
+}
+
+.lin,.insta{
+  color: whitesmoke;
+}
+
+@media (max-width:800px){
+  .interestslist{
+    display: flex;
+    flex-direction: column;
+  }
+  .projects{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+  }
+}
